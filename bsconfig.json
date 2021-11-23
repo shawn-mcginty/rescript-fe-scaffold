@@ -1,0 +1,27 @@
+{
+  "name": "rescript-project-template",
+  "version": "0.0.1",
+  "sources": {
+    "dir" : "src",
+    "subdirs" : true
+  },
+  "package-specs": {
+    "module": "commonjs",
+    "in-source": true
+  },
+  "suffix": ".bs.js",
+  "bs-dependencies": [
+    "@reasonml-community/graphql-ppx",
+    "@rescript/react",
+    "bs-webapi"
+  ],
+  "ppx-flags": [
+    "@reasonml-community/graphql-ppx/ppx"
+  ],
+  "warnings": {
+    "error" : "+101"
+  },
+  "reason": {
+    "react-jsx": 3
+  }
+}
