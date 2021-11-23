@@ -13,11 +13,22 @@
   "bs-dependencies": [
     "@reasonml-community/graphql-ppx",
     "@rescript/react",
-    "rescript-webapi"
+    "rescript-webapi",
+    "rescript-apollo-client"
   ],
   "ppx-flags": [
     "@reasonml-community/graphql-ppx/ppx"
   ],
+  "graphql": {
+    "templateTagIsFunction": true,
+    "apolloMode": true,
+    "extendMutation": "ApolloClient.GraphQL_PPX.ExtendMutation",
+    "extendQuery": "ApolloClient.GraphQL_PPX.ExtendQuery",
+    "extendSubscription": "ApolloClient.GraphQL_PPX.ExtendSubscription",
+    "templateTagReturnType": "ApolloClient.GraphQL_PPX.templateTagReturnType",
+    "templateTagImport": "gql",
+    "templateTagLocation": "@apollo/client"
+  },
   "warnings": {
     "error" : "+101"
   },

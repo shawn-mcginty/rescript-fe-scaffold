@@ -107,3 +107,4 @@ dist
 .merlin
 .bsb.lock
 lib/bs
+.graphql_ppx_cache

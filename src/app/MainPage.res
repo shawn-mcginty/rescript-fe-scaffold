@@ -1,4 +1,9 @@
 @react.component
 let make = () => {
-  <div> {React.string("Hello world")} </div>
+  <ApolloClient.React.ApolloProvider client=Apollo.client>
+    <div>
+      <div>{React.string("Hello world")}</div>
+      <UserList />
+    </div>
+  </ApolloClient.React.ApolloProvider>
 }

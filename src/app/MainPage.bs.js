@@ -2,9 +2,15 @@
 'use strict';
 
 var React = require("react");
+var Apollo = require("./graphql/Apollo.bs.js");
+var UserList = require("./users/UserList.bs.js");
+var Client = require("@apollo/client");
 
 function MainPage(Props) {
-  return React.createElement("div", undefined, "Hello world");
+  return React.createElement(Client.ApolloProvider, {
+              client: Apollo.client,
+              children: React.createElement("div", undefined, React.createElement("div", undefined, "Hello world"), React.createElement(UserList.make, {}))
+            });
 }
 
 var make = MainPage;
