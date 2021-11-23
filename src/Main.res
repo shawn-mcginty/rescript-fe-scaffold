@@ -1,4 +1,4 @@
-let optRoot = Webapi.Dom.Document.getElementById("root", Webapi.Dom.document)
+let optRoot = Webapi.Dom.Document.getElementById(Webapi.Dom.document, "root")
 
 switch (optRoot) {
   | Some(root) =>
