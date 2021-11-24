@@ -6,10 +6,10 @@
     "subdirs" : true
   },
   "package-specs": {
-    "module": "commonjs",
+    "module": "es6",
     "in-source": true
   },
-  "suffix": ".bs.js",
+  "suffix": ".mjs",
   "bs-dependencies": [
     "@reasonml-community/graphql-ppx",
     "@rescript/react",
@@ -30,9 +30,14 @@
     "templateTagLocation": "@apollo/client"
   },
   "warnings": {
-    "error" : "+101"
+    "number": "-3",
+    "error" : "+101+8"
   },
   "reason": {
     "react-jsx": 3
+  },
+  "gentypeconfig": {
+    "language": "untyped",
+    "shims": []
   }
 }
