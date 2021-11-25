@@ -30,11 +30,12 @@ function MainLayout$Navigation(Props) {
                       children: React.createElement("a", {
                             className: "px-3"
                           }, "Examples")
-                    }), React.createElement("a", {
-                      className: "px-3 font-bold",
-                      href: "https://github.com/ryyppy/nextjs-default",
-                      target: "_blank"
-                    }, "Github")));
+                    }), React.createElement(Link, {
+                      href: "/users",
+                      children: React.createElement("a", {
+                            className: "px-3"
+                          }, "Users")
+                    })));
 }
 
 function MainLayout(Props) {
